@@ -23,7 +23,9 @@
     </profile>
     <profile>
       <id>generateSources</id>
-
+      <properties>
+        <jooqCodegenPhase>generate-sources</jooqCodegenPhase>
+      </properties>
     </profile>
   </profiles>
 
@@ -192,6 +194,11 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <version>2.2.5.RELEASE</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -220,6 +227,8 @@
           <version>3.13.5</version>
           <executions>
             <execution>
+              <id>mcdhcodegeneration</id>
+              <phase>${jooqCodegenPhase}</phase>
               <goals>
                 <goal>generate</goal>
               </goals>
