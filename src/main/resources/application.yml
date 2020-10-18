@@ -1,0 +1,8 @@
+spring:
+  jooq:
+    sql-dialect: postgres
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: T@c0b311
+    url: jdbc:postgresql://localhost:5432/ninja
