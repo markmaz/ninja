@@ -68,14 +68,14 @@ public interface IUser extends Serializable {
     public String getPassword();
 
     /**
-     * Setter for <code>public.user.lastModifiedBy</code>.
+     * Setter for <code>public.user.lastmodifiedby</code>.
      */
     public IUser setLastmodifiedby(String value);
 
     /**
-     * Getter for <code>public.user.lastModifiedBy</code>.
+     * Getter for <code>public.user.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     public String getLastmodifiedby();
 
     /**

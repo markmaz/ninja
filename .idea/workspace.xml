@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb0f70ad-4369-4e63-b915-29b54cf04c19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rmm-services-server-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flyway_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1__0__Initialization.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ninjarmm/services/impl/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/Keys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/Public.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/Public.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/ICustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/ICustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/IDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/IDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/interfaces/IUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/pojos/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/CustomerRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/CustomerRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/CustomerServiceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/CustomerServiceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/DeviceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/DeviceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/ServiceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/ServiceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/UserRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/jooq/tables/records/UserRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ninjarmm/services/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ninjarmm/services/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j12WQqRbd6h0VPonpUBMfU2Ose" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ninjarmm.services.impl" />
+      <recent name="com.ninjarmm.controllers" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ninjarmm.dao.impl" />
+      <recent name="com.ninjarmm.services.impl" />
+      <recent name="com.ninjarmm.dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ninjarmm.filters" />
+      <recent name="com.ninjarmm.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/ninjarmm/model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest.testDeleteCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rmm-services-server-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ninjarmm.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ninjarmm.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.ninjarmm.controllers.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="testDeleteCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest.testGetBill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rmm-services-server-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ninjarmm.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ninjarmm.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.ninjarmm.controllers.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="testGetBill" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rmm-services-server-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ninjarmm.services.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ninjarmm.services.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.ninjarmm.services.impl.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testGetOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rmm-services-server-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ninjarmm.services.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ninjarmm.services.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.ninjarmm.services.impl.UserServiceTest" />
+      <option name="METHOD_NAME" value="testGetOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rmm-services-server-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ninjarmm.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.testGetOne" />
+        <item itemvalue="JUnit.CustomerControllerTest.testDeleteCustomer" />
+        <item itemvalue="JUnit.CustomerControllerTest.testGetBill" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb0f70ad-4369-4e63-b915-29b54cf04c19" name="Default Changelist" comment="" />
+      <created>1602957309762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602957309762</updated>
+      <workItem from="1602957311239" duration="73822000" />
+      <workItem from="1603070066053" duration="2845000" />
+      <workItem from="1603072924717" duration="2817000" />
+      <workItem from="1603120101690" duration="4517000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1110" y="915" width="1654" height="354" key="#SQL_Dialects" timestamp="1603073503656">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1110" y="915" width="1654" height="354" key="#SQL_Dialects/45.27.3795.2133@45.27.3795.2133" timestamp="1603073503656" />
+    <state x="1291" y="505" width="1349" height="942" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602970813035">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1291" y="505" width="1349" height="942" key="#com.intellij.execution.impl.EditConfigurationsDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1602970813035" />
+    <state x="1703" y="704" width="680" height="777" key="#com.intellij.ide.util.MemberChooser" timestamp="1603045261404">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1703" y="704" width="680" height="777" key="#com.intellij.ide.util.MemberChooser/45.27.3795.2133@45.27.3795.2133" timestamp="1603045261404" />
+    <state x="1453" y="701" width="969" height="783" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1602972077838">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1453" y="701" width="969" height="783" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1602972077838" />
+    <state x="1650" y="939" width="756" height="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603059005744">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1650" y="939" width="756" height="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/45.27.3795.2133@45.27.3795.2133" timestamp="1603059005744" />
+    <state x="1661" y="669" width="542" height="846" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603028641443">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1661" y="669" width="542" height="846" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1603028641443" />
+    <state x="1641" y="779" key="#xdebugger.evaluate" timestamp="1603047558188">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1641" y="779" key="#xdebugger.evaluate/45.27.3795.2133@45.27.3795.2133" timestamp="1603047558188" />
+    <state x="1548" y="946" width="778" height="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602990397112">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1548" y="946" width="778" height="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.27.3795.2133@45.27.3795.2133" timestamp="1602990397112" />
+    <state x="145" y="125" width="3595" height="1935" key="DiffContextDialog" timestamp="1603123820078">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="145" y="125" width="3595" height="1935" key="DiffContextDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1603123820078" />
+    <state x="1667" y="776" width="530" height="633" key="FileChooserDialogImpl" timestamp="1603120501243">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1667" y="776" width="530" height="633" key="FileChooserDialogImpl/45.27.3795.2133@45.27.3795.2133" timestamp="1603120501243" />
+    <state width="3795" height="630" key="GridCell.Tab.0.bottom" timestamp="1603124436895">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.0.bottom/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436895" />
+    <state width="3795" height="630" key="GridCell.Tab.0.center" timestamp="1603124436895">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.0.center/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436895" />
+    <state width="3795" height="630" key="GridCell.Tab.0.left" timestamp="1603124436895">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.0.left/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436895" />
+    <state width="3795" height="630" key="GridCell.Tab.0.right" timestamp="1603124436895">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.0.right/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436895" />
+    <state width="3795" height="630" key="GridCell.Tab.1.bottom" timestamp="1603124436896">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.1.bottom/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436896" />
+    <state width="3795" height="630" key="GridCell.Tab.1.center" timestamp="1603124436896">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.1.center/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436896" />
+    <state width="3795" height="630" key="GridCell.Tab.1.left" timestamp="1603124436895">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.1.left/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436895" />
+    <state width="3795" height="630" key="GridCell.Tab.1.right" timestamp="1603124436896">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="630" key="GridCell.Tab.1.right/45.27.3795.2133@45.27.3795.2133" timestamp="1603124436896" />
+    <state width="3795" height="771" key="GridCell.Tab.2.bottom" timestamp="1603122966479">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="771" key="GridCell.Tab.2.bottom/45.27.3795.2133@45.27.3795.2133" timestamp="1603122966479" />
+    <state width="3795" height="771" key="GridCell.Tab.2.center" timestamp="1603122966479">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="771" key="GridCell.Tab.2.center/45.27.3795.2133@45.27.3795.2133" timestamp="1603122966479" />
+    <state width="3795" height="771" key="GridCell.Tab.2.left" timestamp="1603122966479">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="771" key="GridCell.Tab.2.left/45.27.3795.2133@45.27.3795.2133" timestamp="1603122966479" />
+    <state width="3795" height="771" key="GridCell.Tab.2.right" timestamp="1603122966479">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state width="3795" height="771" key="GridCell.Tab.2.right/45.27.3795.2133@45.27.3795.2133" timestamp="1603122966479" />
+    <state x="1360" y="668" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1603070141331">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1360" y="668" width="1155" height="848" key="Maven.ArtifactSearchDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1603070141330" />
+    <state x="1307" y="640" width="1280" height="1049" key="SettingsEditor" timestamp="1603070024744">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1307" y="640" width="1280" height="1049" key="SettingsEditor/45.27.3795.2133@45.27.3795.2133" timestamp="1603070024744" />
+    <state x="145" y="125" width="3595" height="1935" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603049100072">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="145" y="125" width="3595" height="1935" key="com.intellij.history.integration.ui.views.FileHistoryDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1603049100072" />
+    <state x="1640" y="804" width="611" height="577" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603069457304">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1640" y="804" width="611" height="577" key="com.intellij.testIntegration.createTest.CreateTestDialog/45.27.3795.2133@45.27.3795.2133" timestamp="1603069457304" />
+    <state x="1521" y="520" width="840" height="1034" key="search.everywhere.popup" timestamp="1603035713650">
+      <screen x="45" y="27" width="3795" height="2133" />
+    </state>
+    <state x="1521" y="520" width="840" height="1034" key="search.everywhere.popup/45.27.3795.2133@45.27.3795.2133" timestamp="1603035713650" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ninjarmm/filters/JWTAuthenticationFilter.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ninjarmm/filters/JWTAuthenticationFilter.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/impl/UserDataService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ninjarmm/services/impl/UserServiceTest.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ninjarmm/dao/impl/CustomerDataService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ninjarmm/controllers/CustomerController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.ninjarmm.controllers.CustomerControllerTest" memberName="mockMvc" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

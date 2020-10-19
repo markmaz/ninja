@@ -7,6 +7,7 @@ package com.ninjarmm.dao.jooq;
 import com.ninjarmm.dao.jooq.tables.Customer;
 import com.ninjarmm.dao.jooq.tables.CustomerService;
 import com.ninjarmm.dao.jooq.tables.Device;
+import com.ninjarmm.dao.jooq.tables.SchemaVersion;
 import com.ninjarmm.dao.jooq.tables.Service;
 import com.ninjarmm.dao.jooq.tables.User;
 
@@ -40,6 +41,11 @@ public class Tables {
      * The table <code>public.device</code>.
      */
     public static final Device DEVICE = Device.DEVICE;
+
+    /**
+     * The table <code>public.schema_version</code>.
+     */
+    public static final SchemaVersion SCHEMA_VERSION = SchemaVersion.SCHEMA_VERSION;
 
     /**
      * The table <code>public.service</code>.

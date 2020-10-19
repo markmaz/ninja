@@ -7,11 +7,13 @@ package com.ninjarmm.dao.jooq;
 import com.ninjarmm.dao.jooq.tables.Customer;
 import com.ninjarmm.dao.jooq.tables.CustomerService;
 import com.ninjarmm.dao.jooq.tables.Device;
+import com.ninjarmm.dao.jooq.tables.SchemaVersion;
 import com.ninjarmm.dao.jooq.tables.Service;
 import com.ninjarmm.dao.jooq.tables.User;
 import com.ninjarmm.dao.jooq.tables.records.CustomerRecord;
 import com.ninjarmm.dao.jooq.tables.records.CustomerServiceRecord;
 import com.ninjarmm.dao.jooq.tables.records.DeviceRecord;
+import com.ninjarmm.dao.jooq.tables.records.SchemaVersionRecord;
 import com.ninjarmm.dao.jooq.tables.records.ServiceRecord;
 import com.ninjarmm.dao.jooq.tables.records.UserRecord;
 
@@ -49,6 +51,7 @@ public class Keys {
     public static final UniqueKey<CustomerRecord> CUSTOMERS_PK = UniqueKeys0.CUSTOMERS_PK;
     public static final UniqueKey<CustomerServiceRecord> CUSTOMER_SERVICE_PK = UniqueKeys0.CUSTOMER_SERVICE_PK;
     public static final UniqueKey<DeviceRecord> DEVICE_PK = UniqueKeys0.DEVICE_PK;
+    public static final UniqueKey<SchemaVersionRecord> SCHEMA_VERSION_PK = UniqueKeys0.SCHEMA_VERSION_PK;
     public static final UniqueKey<ServiceRecord> SERVICE_PK = UniqueKeys0.SERVICE_PK;
     public static final UniqueKey<UserRecord> USER_PKEY = UniqueKeys0.USER_PKEY;
 
@@ -68,6 +71,7 @@ public class Keys {
         public static final UniqueKey<CustomerRecord> CUSTOMERS_PK = Internal.createUniqueKey(Customer.CUSTOMER, "customers_pk", new TableField[] { Customer.CUSTOMER.ID }, true);
         public static final UniqueKey<CustomerServiceRecord> CUSTOMER_SERVICE_PK = Internal.createUniqueKey(CustomerService.CUSTOMER_SERVICE, "customer_service_pk", new TableField[] { CustomerService.CUSTOMER_SERVICE.ID }, true);
         public static final UniqueKey<DeviceRecord> DEVICE_PK = Internal.createUniqueKey(Device.DEVICE, "device_pk", new TableField[] { Device.DEVICE.ID }, true);
+        public static final UniqueKey<SchemaVersionRecord> SCHEMA_VERSION_PK = Internal.createUniqueKey(SchemaVersion.SCHEMA_VERSION, "schema_version_pk", new TableField[] { SchemaVersion.SCHEMA_VERSION.INSTALLED_RANK }, true);
         public static final UniqueKey<ServiceRecord> SERVICE_PK = Internal.createUniqueKey(Service.SERVICE, "service_pk", new TableField[] { Service.SERVICE.ID }, true);
         public static final UniqueKey<UserRecord> USER_PKEY = Internal.createUniqueKey(User.USER, "user_pkey", new TableField[] { User.USER.ID }, true);
     }

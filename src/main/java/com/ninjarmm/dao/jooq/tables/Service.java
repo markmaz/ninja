@@ -43,7 +43,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Service extends TableImpl<ServiceRecord> {
 
-    private static final long serialVersionUID = 800739790;
+    private static final long serialVersionUID = -2064698930;
 
     /**
      * The reference instance of <code>public.service</code>
@@ -64,29 +64,29 @@ public class Service extends TableImpl<ServiceRecord> {
     public final TableField<ServiceRecord, UUID> ID = createField(DSL.name("id"), org.jooq.impl.SQLDataType.UUID.nullable(false), this, "");
 
     /**
-     * The column <code>public.service.serviceName</code>.
+     * The column <code>public.service.servicename</code>.
      */
-    public final TableField<ServiceRecord, String> SERVICENAME = createField(DSL.name("serviceName"), org.jooq.impl.SQLDataType.VARCHAR.nullable(false), this, "");
+    public final TableField<ServiceRecord, String> SERVICENAME = createField(DSL.name("servicename"), org.jooq.impl.SQLDataType.VARCHAR.nullable(false), this, "");
 
     /**
-     * The column <code>public.service.priceForMac</code>.
+     * The column <code>public.service.priceformac</code>.
      */
-    public final TableField<ServiceRecord, BigDecimal> PRICEFORMAC = createField(DSL.name("priceForMac"), org.jooq.impl.SQLDataType.NUMERIC.nullable(false), this, "");
+    public final TableField<ServiceRecord, BigDecimal> PRICEFORMAC = createField(DSL.name("priceformac"), org.jooq.impl.SQLDataType.NUMERIC.nullable(false), this, "");
 
     /**
-     * The column <code>public.service.lastModifiedBy</code>.
+     * The column <code>public.service.lastmodifiedby</code>.
      */
-    public final TableField<ServiceRecord, String> LASTMODIFIEDBY = createField(DSL.name("lastModifiedBy"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
+    public final TableField<ServiceRecord, String> LASTMODIFIEDBY = createField(DSL.name("lastmodifiedby"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     /**
-     * The column <code>public.service.priceForWindows</code>.
+     * The column <code>public.service.priceforwindows</code>.
      */
-    public final TableField<ServiceRecord, BigDecimal> PRICEFORWINDOWS = createField(DSL.name("priceForWindows"), org.jooq.impl.SQLDataType.NUMERIC, this, "");
+    public final TableField<ServiceRecord, BigDecimal> PRICEFORWINDOWS = createField(DSL.name("priceforwindows"), org.jooq.impl.SQLDataType.NUMERIC, this, "");
 
     /**
-     * The column <code>public.service.lastModifiedDateTime</code>.
+     * The column <code>public.service.lastmodifieddatetime</code>.
      */
-    public final TableField<ServiceRecord, OffsetDateTime> LASTMODIFIEDDATETIME = createField(DSL.name("lastModifiedDateTime"), org.jooq.impl.SQLDataType.TIMESTAMPWITHTIMEZONE, this, "");
+    public final TableField<ServiceRecord, OffsetDateTime> LASTMODIFIEDDATETIME = createField(DSL.name("lastmodifieddatetime"), org.jooq.impl.SQLDataType.TIMESTAMPWITHTIMEZONE, this, "");
 
     /**
      * The column <code>public.service.comments</code>.

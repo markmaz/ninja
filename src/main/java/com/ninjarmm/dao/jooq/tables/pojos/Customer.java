@@ -34,7 +34,7 @@ import javax.persistence.UniqueConstraint;
 })
 public class Customer implements ICustomer {
 
-    private static final long serialVersionUID = 421837639;
+    private static final long serialVersionUID = -27862137;
 
     private UUID           id;
     private String         name;
@@ -87,7 +87,7 @@ public class Customer implements ICustomer {
         return this;
     }
 
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     @Override
     public String getLastmodifiedby() {
         return this.lastmodifiedby;

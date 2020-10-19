@@ -47,37 +47,26 @@ public interface IDevice extends Serializable {
     public UUID getId();
 
     /**
-     * Setter for <code>public.device.systemName</code>.
+     * Setter for <code>public.device.systemname</code>.
      */
     public IDevice setSystemname(String value);
 
     /**
-     * Getter for <code>public.device.systemName</code>.
+     * Getter for <code>public.device.systemname</code>.
      */
-    @Column(name = "systemName")
+    @Column(name = "systemname")
     public String getSystemname();
 
     /**
-     * Setter for <code>public.device.deviceType</code>.
+     * Setter for <code>public.device.devicetype</code>.
      */
     public IDevice setDevicetype(String value);
 
     /**
-     * Getter for <code>public.device.deviceType</code>.
+     * Getter for <code>public.device.devicetype</code>.
      */
-    @Column(name = "deviceType")
+    @Column(name = "devicetype")
     public String getDevicetype();
-
-    /**
-     * Setter for <code>public.device.lastModifiedBy</code>.
-     */
-    public IDevice setLastmodifiedby(String value);
-
-    /**
-     * Getter for <code>public.device.lastModifiedBy</code>.
-     */
-    @Column(name = "lastModifiedBy")
-    public String getLastmodifiedby();
 
     /**
      * Setter for <code>public.device.customerid</code>.
@@ -111,6 +100,17 @@ public interface IDevice extends Serializable {
      */
     @Column(name = "devicecost")
     public BigDecimal getDevicecost();
+
+    /**
+     * Setter for <code>public.device.lastmodifiedby</code>.
+     */
+    public IDevice setLastmodifiedby(String value);
+
+    /**
+     * Getter for <code>public.device.lastmodifiedby</code>.
+     */
+    @Column(name = "lastmodifiedby")
+    public String getLastmodifiedby();
 
     // -------------------------------------------------------------------------
     // FROM and INTO

@@ -43,7 +43,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Device extends TableImpl<DeviceRecord> {
 
-    private static final long serialVersionUID = 1906616896;
+    private static final long serialVersionUID = -1220015434;
 
     /**
      * The reference instance of <code>public.device</code>
@@ -64,19 +64,14 @@ public class Device extends TableImpl<DeviceRecord> {
     public final TableField<DeviceRecord, UUID> ID = createField(DSL.name("id"), org.jooq.impl.SQLDataType.UUID.nullable(false), this, "");
 
     /**
-     * The column <code>public.device.systemName</code>.
+     * The column <code>public.device.systemname</code>.
      */
-    public final TableField<DeviceRecord, String> SYSTEMNAME = createField(DSL.name("systemName"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
+    public final TableField<DeviceRecord, String> SYSTEMNAME = createField(DSL.name("systemname"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     /**
-     * The column <code>public.device.deviceType</code>.
+     * The column <code>public.device.devicetype</code>.
      */
-    public final TableField<DeviceRecord, String> DEVICETYPE = createField(DSL.name("deviceType"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
-
-    /**
-     * The column <code>public.device.lastModifiedBy</code>.
-     */
-    public final TableField<DeviceRecord, String> LASTMODIFIEDBY = createField(DSL.name("lastModifiedBy"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
+    public final TableField<DeviceRecord, String> DEVICETYPE = createField(DSL.name("devicetype"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     /**
      * The column <code>public.device.customerid</code>.
@@ -92,6 +87,11 @@ public class Device extends TableImpl<DeviceRecord> {
      * The column <code>public.device.devicecost</code>.
      */
     public final TableField<DeviceRecord, BigDecimal> DEVICECOST = createField(DSL.name("devicecost"), org.jooq.impl.SQLDataType.NUMERIC, this, "");
+
+    /**
+     * The column <code>public.device.lastmodifiedby</code>.
+     */
+    public final TableField<DeviceRecord, String> LASTMODIFIEDBY = createField(DSL.name("lastmodifiedby"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     /**
      * Create a <code>public.device</code> table reference
@@ -181,7 +181,7 @@ public class Device extends TableImpl<DeviceRecord> {
     // -------------------------------------------------------------------------
 
     @Override
-    public Row7<UUID, String, String, String, UUID, OffsetDateTime, BigDecimal> fieldsRow() {
+    public Row7<UUID, String, String, UUID, OffsetDateTime, BigDecimal, String> fieldsRow() {
         return (Row7) super.fieldsRow();
     }
 }

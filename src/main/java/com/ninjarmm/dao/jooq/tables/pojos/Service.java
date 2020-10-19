@@ -35,7 +35,7 @@ import javax.persistence.UniqueConstraint;
 })
 public class Service implements IService {
 
-    private static final long serialVersionUID = 461935848;
+    private static final long serialVersionUID = -1310612184;
 
     private UUID           id;
     private String         servicename;
@@ -88,7 +88,7 @@ public class Service implements IService {
         return this;
     }
 
-    @Column(name = "serviceName", nullable = false)
+    @Column(name = "servicename", nullable = false)
     @Override
     public String getServicename() {
         return this.servicename;
@@ -100,7 +100,7 @@ public class Service implements IService {
         return this;
     }
 
-    @Column(name = "priceForMac", nullable = false)
+    @Column(name = "priceformac", nullable = false)
     @Override
     public BigDecimal getPriceformac() {
         return this.priceformac;
@@ -112,7 +112,7 @@ public class Service implements IService {
         return this;
     }
 
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     @Override
     public String getLastmodifiedby() {
         return this.lastmodifiedby;
@@ -124,7 +124,7 @@ public class Service implements IService {
         return this;
     }
 
-    @Column(name = "priceForWindows")
+    @Column(name = "priceforwindows")
     @Override
     public BigDecimal getPriceforwindows() {
         return this.priceforwindows;
@@ -136,7 +136,7 @@ public class Service implements IService {
         return this;
     }
 
-    @Column(name = "lastModifiedDateTime")
+    @Column(name = "lastmodifieddatetime")
     @Override
     public OffsetDateTime getLastmodifieddatetime() {
         return this.lastmodifieddatetime;

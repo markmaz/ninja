@@ -47,58 +47,58 @@ public interface IService extends Serializable {
     public UUID getId();
 
     /**
-     * Setter for <code>public.service.serviceName</code>.
+     * Setter for <code>public.service.servicename</code>.
      */
     public IService setServicename(String value);
 
     /**
-     * Getter for <code>public.service.serviceName</code>.
+     * Getter for <code>public.service.servicename</code>.
      */
-    @Column(name = "serviceName", nullable = false)
+    @Column(name = "servicename", nullable = false)
     public String getServicename();
 
     /**
-     * Setter for <code>public.service.priceForMac</code>.
+     * Setter for <code>public.service.priceformac</code>.
      */
     public IService setPriceformac(BigDecimal value);
 
     /**
-     * Getter for <code>public.service.priceForMac</code>.
+     * Getter for <code>public.service.priceformac</code>.
      */
-    @Column(name = "priceForMac", nullable = false)
+    @Column(name = "priceformac", nullable = false)
     public BigDecimal getPriceformac();
 
     /**
-     * Setter for <code>public.service.lastModifiedBy</code>.
+     * Setter for <code>public.service.lastmodifiedby</code>.
      */
     public IService setLastmodifiedby(String value);
 
     /**
-     * Getter for <code>public.service.lastModifiedBy</code>.
+     * Getter for <code>public.service.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     public String getLastmodifiedby();
 
     /**
-     * Setter for <code>public.service.priceForWindows</code>.
+     * Setter for <code>public.service.priceforwindows</code>.
      */
     public IService setPriceforwindows(BigDecimal value);
 
     /**
-     * Getter for <code>public.service.priceForWindows</code>.
+     * Getter for <code>public.service.priceforwindows</code>.
      */
-    @Column(name = "priceForWindows")
+    @Column(name = "priceforwindows")
     public BigDecimal getPriceforwindows();
 
     /**
-     * Setter for <code>public.service.lastModifiedDateTime</code>.
+     * Setter for <code>public.service.lastmodifieddatetime</code>.
      */
     public IService setLastmodifieddatetime(OffsetDateTime value);
 
     /**
-     * Getter for <code>public.service.lastModifiedDateTime</code>.
+     * Getter for <code>public.service.lastmodifieddatetime</code>.
      */
-    @Column(name = "lastModifiedDateTime")
+    @Column(name = "lastmodifieddatetime")
     public OffsetDateTime getLastmodifieddatetime();
 
     /**

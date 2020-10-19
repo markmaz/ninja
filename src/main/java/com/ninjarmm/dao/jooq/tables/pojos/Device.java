@@ -35,15 +35,15 @@ import javax.persistence.UniqueConstraint;
 })
 public class Device implements IDevice {
 
-    private static final long serialVersionUID = 123173043;
+    private static final long serialVersionUID = -1648221141;
 
     private UUID           id;
     private String         systemname;
     private String         devicetype;
-    private String         lastmodifiedby;
     private UUID           customerid;
     private OffsetDateTime lastmodifieddatetime;
     private BigDecimal     devicecost;
+    private String         lastmodifiedby;
 
     public Device() {}
 
@@ -51,28 +51,28 @@ public class Device implements IDevice {
         this.id = value.getId();
         this.systemname = value.getSystemname();
         this.devicetype = value.getDevicetype();
-        this.lastmodifiedby = value.getLastmodifiedby();
         this.customerid = value.getCustomerid();
         this.lastmodifieddatetime = value.getLastmodifieddatetime();
         this.devicecost = value.getDevicecost();
+        this.lastmodifiedby = value.getLastmodifiedby();
     }
 
     public Device(
         UUID           id,
         String         systemname,
         String         devicetype,
-        String         lastmodifiedby,
         UUID           customerid,
         OffsetDateTime lastmodifieddatetime,
-        BigDecimal     devicecost
+        BigDecimal     devicecost,
+        String         lastmodifiedby
     ) {
         this.id = id;
         this.systemname = systemname;
         this.devicetype = devicetype;
-        this.lastmodifiedby = lastmodifiedby;
         this.customerid = customerid;
         this.lastmodifieddatetime = lastmodifieddatetime;
         this.devicecost = devicecost;
+        this.lastmodifiedby = lastmodifiedby;
     }
 
     @Id
@@ -88,7 +88,7 @@ public class Device implements IDevice {
         return this;
     }
 
-    @Column(name = "systemName")
+    @Column(name = "systemname")
     @Override
     public String getSystemname() {
         return this.systemname;
@@ -100,7 +100,7 @@ public class Device implements IDevice {
         return this;
     }
 
-    @Column(name = "deviceType")
+    @Column(name = "devicetype")
     @Override
     public String getDevicetype() {
         return this.devicetype;
@@ -109,18 +109,6 @@ public class Device implements IDevice {
     @Override
     public Device setDevicetype(String devicetype) {
         this.devicetype = devicetype;
-        return this;
-    }
-
-    @Column(name = "lastModifiedBy")
-    @Override
-    public String getLastmodifiedby() {
-        return this.lastmodifiedby;
-    }
-
-    @Override
-    public Device setLastmodifiedby(String lastmodifiedby) {
-        this.lastmodifiedby = lastmodifiedby;
         return this;
     }
 
@@ -160,6 +148,18 @@ public class Device implements IDevice {
         return this;
     }
 
+    @Column(name = "lastmodifiedby")
+    @Override
+    public String getLastmodifiedby() {
+        return this.lastmodifiedby;
+    }
+
+    @Override
+    public Device setLastmodifiedby(String lastmodifiedby) {
+        this.lastmodifiedby = lastmodifiedby;
+        return this;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -187,12 +187,6 @@ public class Device implements IDevice {
         }
         else if (!devicetype.equals(other.devicetype))
             return false;
-        if (lastmodifiedby == null) {
-            if (other.lastmodifiedby != null)
-                return false;
-        }
-        else if (!lastmodifiedby.equals(other.lastmodifiedby))
-            return false;
         if (customerid == null) {
             if (other.customerid != null)
                 return false;
@@ -211,6 +205,12 @@ public class Device implements IDevice {
         }
         else if (!devicecost.equals(other.devicecost))
             return false;
+        if (lastmodifiedby == null) {
+            if (other.lastmodifiedby != null)
+                return false;
+        }
+        else if (!lastmodifiedby.equals(other.lastmodifiedby))
+            return false;
         return true;
     }
 
@@ -221,10 +221,10 @@ public class Device implements IDevice {
         result = prime * result + ((this.id == null) ? 0 : this.id.hashCode());
         result = prime * result + ((this.systemname == null) ? 0 : this.systemname.hashCode());
         result = prime * result + ((this.devicetype == null) ? 0 : this.devicetype.hashCode());
-        result = prime * result + ((this.lastmodifiedby == null) ? 0 : this.lastmodifiedby.hashCode());
         result = prime * result + ((this.customerid == null) ? 0 : this.customerid.hashCode());
         result = prime * result + ((this.lastmodifieddatetime == null) ? 0 : this.lastmodifieddatetime.hashCode());
         result = prime * result + ((this.devicecost == null) ? 0 : this.devicecost.hashCode());
+        result = prime * result + ((this.lastmodifiedby == null) ? 0 : this.lastmodifiedby.hashCode());
         return result;
     }
 
@@ -235,10 +235,10 @@ public class Device implements IDevice {
         sb.append(id);
         sb.append(", ").append(systemname);
         sb.append(", ").append(devicetype);
-        sb.append(", ").append(lastmodifiedby);
         sb.append(", ").append(customerid);
         sb.append(", ").append(lastmodifieddatetime);
         sb.append(", ").append(devicecost);
+        sb.append(", ").append(lastmodifiedby);
 
         sb.append(")");
         return sb.toString();
@@ -253,10 +253,10 @@ public class Device implements IDevice {
         setId(from.getId());
         setSystemname(from.getSystemname());
         setDevicetype(from.getDevicetype());
-        setLastmodifiedby(from.getLastmodifiedby());
         setCustomerid(from.getCustomerid());
         setLastmodifieddatetime(from.getLastmodifieddatetime());
         setDevicecost(from.getDevicecost());
+        setLastmodifiedby(from.getLastmodifiedby());
     }
 
     @Override

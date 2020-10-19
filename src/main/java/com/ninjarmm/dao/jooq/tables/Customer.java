@@ -42,7 +42,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Customer extends TableImpl<CustomerRecord> {
 
-    private static final long serialVersionUID = 2067035183;
+    private static final long serialVersionUID = 857400495;
 
     /**
      * The reference instance of <code>public.customer</code>
@@ -68,9 +68,9 @@ public class Customer extends TableImpl<CustomerRecord> {
     public final TableField<CustomerRecord, String> NAME = createField(DSL.name("name"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     /**
-     * The column <code>public.customer.lastModifiedBy</code>.
+     * The column <code>public.customer.lastmodifiedby</code>.
      */
-    public final TableField<CustomerRecord, String> LASTMODIFIEDBY = createField(DSL.name("lastModifiedBy"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
+    public final TableField<CustomerRecord, String> LASTMODIFIEDBY = createField(DSL.name("lastmodifiedby"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     /**
      * The column <code>public.customer.lastmodifieddatetime</code>.

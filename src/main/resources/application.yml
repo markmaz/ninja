@@ -6,8 +6,6 @@ spring:
     username: postgres
     password: T@c0b311
     url: jdbc:postgresql://localhost:5432/ninja
-    initialization-mode: always
-  jpa:
-    generate-ddl: true
-    hibernate:
-      ddl-auto: create
+logging:
+  level:
+    root: off

@@ -40,9 +40,9 @@ import org.jooq.impl.UpdatableRecordImpl;
 @Table(name = "device", schema = "public", uniqueConstraints = {
     @UniqueConstraint(name = "device_pk", columnNames = {"id"})
 })
-public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements Record7<UUID, String, String, String, UUID, OffsetDateTime, BigDecimal>, IDevice {
+public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements Record7<UUID, String, String, UUID, OffsetDateTime, BigDecimal, String>, IDevice {
 
-    private static final long serialVersionUID = 627323975;
+    private static final long serialVersionUID = -1324551061;
 
     /**
      * Setter for <code>public.device.id</code>.
@@ -64,7 +64,7 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     /**
-     * Setter for <code>public.device.systemName</code>.
+     * Setter for <code>public.device.systemname</code>.
      */
     @Override
     public DeviceRecord setSystemname(String value) {
@@ -73,16 +73,16 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     /**
-     * Getter for <code>public.device.systemName</code>.
+     * Getter for <code>public.device.systemname</code>.
      */
-    @Column(name = "systemName")
+    @Column(name = "systemname")
     @Override
     public String getSystemname() {
         return (String) get(1);
     }
 
     /**
-     * Setter for <code>public.device.deviceType</code>.
+     * Setter for <code>public.device.devicetype</code>.
      */
     @Override
     public DeviceRecord setDevicetype(String value) {
@@ -91,30 +91,12 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     /**
-     * Getter for <code>public.device.deviceType</code>.
+     * Getter for <code>public.device.devicetype</code>.
      */
-    @Column(name = "deviceType")
+    @Column(name = "devicetype")
     @Override
     public String getDevicetype() {
         return (String) get(2);
-    }
-
-    /**
-     * Setter for <code>public.device.lastModifiedBy</code>.
-     */
-    @Override
-    public DeviceRecord setLastmodifiedby(String value) {
-        set(3, value);
-        return this;
-    }
-
-    /**
-     * Getter for <code>public.device.lastModifiedBy</code>.
-     */
-    @Column(name = "lastModifiedBy")
-    @Override
-    public String getLastmodifiedby() {
-        return (String) get(3);
     }
 
     /**
@@ -122,7 +104,7 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
      */
     @Override
     public DeviceRecord setCustomerid(UUID value) {
-        set(4, value);
+        set(3, value);
         return this;
     }
 
@@ -132,7 +114,7 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     @Column(name = "customerid")
     @Override
     public UUID getCustomerid() {
-        return (UUID) get(4);
+        return (UUID) get(3);
     }
 
     /**
@@ -140,7 +122,7 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
      */
     @Override
     public DeviceRecord setLastmodifieddatetime(OffsetDateTime value) {
-        set(5, value);
+        set(4, value);
         return this;
     }
 
@@ -150,7 +132,7 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     @Column(name = "lastmodifieddatetime")
     @Override
     public OffsetDateTime getLastmodifieddatetime() {
-        return (OffsetDateTime) get(5);
+        return (OffsetDateTime) get(4);
     }
 
     /**
@@ -158,7 +140,7 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
      */
     @Override
     public DeviceRecord setDevicecost(BigDecimal value) {
-        set(6, value);
+        set(5, value);
         return this;
     }
 
@@ -168,7 +150,25 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     @Column(name = "devicecost")
     @Override
     public BigDecimal getDevicecost() {
-        return (BigDecimal) get(6);
+        return (BigDecimal) get(5);
+    }
+
+    /**
+     * Setter for <code>public.device.lastmodifiedby</code>.
+     */
+    @Override
+    public DeviceRecord setLastmodifiedby(String value) {
+        set(6, value);
+        return this;
+    }
+
+    /**
+     * Getter for <code>public.device.lastmodifiedby</code>.
+     */
+    @Column(name = "lastmodifiedby")
+    @Override
+    public String getLastmodifiedby() {
+        return (String) get(6);
     }
 
     // -------------------------------------------------------------------------
@@ -185,12 +185,12 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     // -------------------------------------------------------------------------
 
     @Override
-    public Row7<UUID, String, String, String, UUID, OffsetDateTime, BigDecimal> fieldsRow() {
+    public Row7<UUID, String, String, UUID, OffsetDateTime, BigDecimal, String> fieldsRow() {
         return (Row7) super.fieldsRow();
     }
 
     @Override
-    public Row7<UUID, String, String, String, UUID, OffsetDateTime, BigDecimal> valuesRow() {
+    public Row7<UUID, String, String, UUID, OffsetDateTime, BigDecimal, String> valuesRow() {
         return (Row7) super.valuesRow();
     }
 
@@ -210,23 +210,23 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     @Override
-    public Field<String> field4() {
-        return Device.DEVICE.LASTMODIFIEDBY;
-    }
-
-    @Override
-    public Field<UUID> field5() {
+    public Field<UUID> field4() {
         return Device.DEVICE.CUSTOMERID;
     }
 
     @Override
-    public Field<OffsetDateTime> field6() {
+    public Field<OffsetDateTime> field5() {
         return Device.DEVICE.LASTMODIFIEDDATETIME;
     }
 
     @Override
-    public Field<BigDecimal> field7() {
+    public Field<BigDecimal> field6() {
         return Device.DEVICE.DEVICECOST;
+    }
+
+    @Override
+    public Field<String> field7() {
+        return Device.DEVICE.LASTMODIFIEDBY;
     }
 
     @Override
@@ -245,23 +245,23 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     @Override
-    public String component4() {
-        return getLastmodifiedby();
-    }
-
-    @Override
-    public UUID component5() {
+    public UUID component4() {
         return getCustomerid();
     }
 
     @Override
-    public OffsetDateTime component6() {
+    public OffsetDateTime component5() {
         return getLastmodifieddatetime();
     }
 
     @Override
-    public BigDecimal component7() {
+    public BigDecimal component6() {
         return getDevicecost();
+    }
+
+    @Override
+    public String component7() {
+        return getLastmodifiedby();
     }
 
     @Override
@@ -280,23 +280,23 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     @Override
-    public String value4() {
-        return getLastmodifiedby();
-    }
-
-    @Override
-    public UUID value5() {
+    public UUID value4() {
         return getCustomerid();
     }
 
     @Override
-    public OffsetDateTime value6() {
+    public OffsetDateTime value5() {
         return getLastmodifieddatetime();
     }
 
     @Override
-    public BigDecimal value7() {
+    public BigDecimal value6() {
         return getDevicecost();
+    }
+
+    @Override
+    public String value7() {
+        return getLastmodifiedby();
     }
 
     @Override
@@ -318,31 +318,31 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     }
 
     @Override
-    public DeviceRecord value4(String value) {
-        setLastmodifiedby(value);
-        return this;
-    }
-
-    @Override
-    public DeviceRecord value5(UUID value) {
+    public DeviceRecord value4(UUID value) {
         setCustomerid(value);
         return this;
     }
 
     @Override
-    public DeviceRecord value6(OffsetDateTime value) {
+    public DeviceRecord value5(OffsetDateTime value) {
         setLastmodifieddatetime(value);
         return this;
     }
 
     @Override
-    public DeviceRecord value7(BigDecimal value) {
+    public DeviceRecord value6(BigDecimal value) {
         setDevicecost(value);
         return this;
     }
 
     @Override
-    public DeviceRecord values(UUID value1, String value2, String value3, String value4, UUID value5, OffsetDateTime value6, BigDecimal value7) {
+    public DeviceRecord value7(String value) {
+        setLastmodifiedby(value);
+        return this;
+    }
+
+    @Override
+    public DeviceRecord values(UUID value1, String value2, String value3, UUID value4, OffsetDateTime value5, BigDecimal value6, String value7) {
         value1(value1);
         value2(value2);
         value3(value3);
@@ -362,10 +362,10 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
         setId(from.getId());
         setSystemname(from.getSystemname());
         setDevicetype(from.getDevicetype());
-        setLastmodifiedby(from.getLastmodifiedby());
         setCustomerid(from.getCustomerid());
         setLastmodifieddatetime(from.getLastmodifieddatetime());
         setDevicecost(from.getDevicecost());
+        setLastmodifiedby(from.getLastmodifiedby());
     }
 
     @Override
@@ -388,15 +388,15 @@ public class DeviceRecord extends UpdatableRecordImpl<DeviceRecord> implements R
     /**
      * Create a detached, initialised DeviceRecord
      */
-    public DeviceRecord(UUID id, String systemname, String devicetype, String lastmodifiedby, UUID customerid, OffsetDateTime lastmodifieddatetime, BigDecimal devicecost) {
+    public DeviceRecord(UUID id, String systemname, String devicetype, UUID customerid, OffsetDateTime lastmodifieddatetime, BigDecimal devicecost, String lastmodifiedby) {
         super(Device.DEVICE);
 
         set(0, id);
         set(1, systemname);
         set(2, devicetype);
-        set(3, lastmodifiedby);
-        set(4, customerid);
-        set(5, lastmodifieddatetime);
-        set(6, devicecost);
+        set(3, customerid);
+        set(4, lastmodifieddatetime);
+        set(5, devicecost);
+        set(6, lastmodifiedby);
     }
 }

@@ -57,14 +57,14 @@ public interface ICustomer extends Serializable {
     public String getName();
 
     /**
-     * Setter for <code>public.customer.lastModifiedBy</code>.
+     * Setter for <code>public.customer.lastmodifiedby</code>.
      */
     public ICustomer setLastmodifiedby(String value);
 
     /**
-     * Getter for <code>public.customer.lastModifiedBy</code>.
+     * Getter for <code>public.customer.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     public String getLastmodifiedby();
 
     /**

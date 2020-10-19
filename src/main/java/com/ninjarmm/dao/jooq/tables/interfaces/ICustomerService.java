@@ -68,14 +68,14 @@ public interface ICustomerService extends Serializable {
     public UUID getServiceid();
 
     /**
-     * Setter for <code>public.customer_service.lastModifiedBy</code>.
+     * Setter for <code>public.customer_service.lastmodifiedby</code>.
      */
     public ICustomerService setLastmodifiedby(String value);
 
     /**
-     * Getter for <code>public.customer_service.lastModifiedBy</code>.
+     * Getter for <code>public.customer_service.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     public String getLastmodifiedby();
 
     /**

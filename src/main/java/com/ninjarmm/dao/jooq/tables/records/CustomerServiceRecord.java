@@ -41,7 +41,7 @@ import org.jooq.impl.UpdatableRecordImpl;
 })
 public class CustomerServiceRecord extends UpdatableRecordImpl<CustomerServiceRecord> implements Record5<UUID, UUID, UUID, String, OffsetDateTime>, ICustomerService {
 
-    private static final long serialVersionUID = 913314832;
+    private static final long serialVersionUID = 248867920;
 
     /**
      * Setter for <code>public.customer_service.id</code>.
@@ -99,7 +99,7 @@ public class CustomerServiceRecord extends UpdatableRecordImpl<CustomerServiceRe
     }
 
     /**
-     * Setter for <code>public.customer_service.lastModifiedBy</code>.
+     * Setter for <code>public.customer_service.lastmodifiedby</code>.
      */
     @Override
     public CustomerServiceRecord setLastmodifiedby(String value) {
@@ -108,9 +108,9 @@ public class CustomerServiceRecord extends UpdatableRecordImpl<CustomerServiceRe
     }
 
     /**
-     * Getter for <code>public.customer_service.lastModifiedBy</code>.
+     * Getter for <code>public.customer_service.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     @Override
     public String getLastmodifiedby() {
         return (String) get(3);

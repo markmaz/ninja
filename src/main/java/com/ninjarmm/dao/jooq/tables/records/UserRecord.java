@@ -41,7 +41,7 @@ import org.jooq.impl.UpdatableRecordImpl;
 })
 public class UserRecord extends UpdatableRecordImpl<UserRecord> implements Record5<UUID, String, String, String, OffsetDateTime>, IUser {
 
-    private static final long serialVersionUID = -946117305;
+    private static final long serialVersionUID = 989889799;
 
     /**
      * Setter for <code>public.user.id</code>.
@@ -99,7 +99,7 @@ public class UserRecord extends UpdatableRecordImpl<UserRecord> implements Recor
     }
 
     /**
-     * Setter for <code>public.user.lastModifiedBy</code>.
+     * Setter for <code>public.user.lastmodifiedby</code>.
      */
     @Override
     public UserRecord setLastmodifiedby(String value) {
@@ -108,9 +108,9 @@ public class UserRecord extends UpdatableRecordImpl<UserRecord> implements Recor
     }
 
     /**
-     * Getter for <code>public.user.lastModifiedBy</code>.
+     * Getter for <code>public.user.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     @Override
     public String getLastmodifiedby() {
         return (String) get(3);

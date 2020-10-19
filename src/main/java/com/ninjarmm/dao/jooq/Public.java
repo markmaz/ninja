@@ -7,6 +7,7 @@ package com.ninjarmm.dao.jooq;
 import com.ninjarmm.dao.jooq.tables.Customer;
 import com.ninjarmm.dao.jooq.tables.CustomerService;
 import com.ninjarmm.dao.jooq.tables.Device;
+import com.ninjarmm.dao.jooq.tables.SchemaVersion;
 import com.ninjarmm.dao.jooq.tables.Service;
 import com.ninjarmm.dao.jooq.tables.User;
 
@@ -33,7 +34,7 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Public extends SchemaImpl {
 
-    private static final long serialVersionUID = -173512779;
+    private static final long serialVersionUID = 1582238750;
 
     /**
      * The reference instance of <code>public</code>
@@ -54,6 +55,11 @@ public class Public extends SchemaImpl {
      * The table <code>public.device</code>.
      */
     public final Device DEVICE = Device.DEVICE;
+
+    /**
+     * The table <code>public.schema_version</code>.
+     */
+    public final SchemaVersion SCHEMA_VERSION = SchemaVersion.SCHEMA_VERSION;
 
     /**
      * The table <code>public.service</code>.
@@ -84,6 +90,7 @@ public class Public extends SchemaImpl {
             Customer.CUSTOMER,
             CustomerService.CUSTOMER_SERVICE,
             Device.DEVICE,
+            SchemaVersion.SCHEMA_VERSION,
             Service.SERVICE,
             User.USER);
     }

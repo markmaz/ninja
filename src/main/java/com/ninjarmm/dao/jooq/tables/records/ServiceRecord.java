@@ -42,7 +42,7 @@ import org.jooq.impl.UpdatableRecordImpl;
 })
 public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements Record7<UUID, String, BigDecimal, String, BigDecimal, OffsetDateTime, String>, IService {
 
-    private static final long serialVersionUID = -1858290899;
+    private static final long serialVersionUID = 372957101;
 
     /**
      * Setter for <code>public.service.id</code>.
@@ -64,7 +64,7 @@ public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements
     }
 
     /**
-     * Setter for <code>public.service.serviceName</code>.
+     * Setter for <code>public.service.servicename</code>.
      */
     @Override
     public ServiceRecord setServicename(String value) {
@@ -73,16 +73,16 @@ public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements
     }
 
     /**
-     * Getter for <code>public.service.serviceName</code>.
+     * Getter for <code>public.service.servicename</code>.
      */
-    @Column(name = "serviceName", nullable = false)
+    @Column(name = "servicename", nullable = false)
     @Override
     public String getServicename() {
         return (String) get(1);
     }
 
     /**
-     * Setter for <code>public.service.priceForMac</code>.
+     * Setter for <code>public.service.priceformac</code>.
      */
     @Override
     public ServiceRecord setPriceformac(BigDecimal value) {
@@ -91,16 +91,16 @@ public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements
     }
 
     /**
-     * Getter for <code>public.service.priceForMac</code>.
+     * Getter for <code>public.service.priceformac</code>.
      */
-    @Column(name = "priceForMac", nullable = false)
+    @Column(name = "priceformac", nullable = false)
     @Override
     public BigDecimal getPriceformac() {
         return (BigDecimal) get(2);
     }
 
     /**
-     * Setter for <code>public.service.lastModifiedBy</code>.
+     * Setter for <code>public.service.lastmodifiedby</code>.
      */
     @Override
     public ServiceRecord setLastmodifiedby(String value) {
@@ -109,16 +109,16 @@ public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements
     }
 
     /**
-     * Getter for <code>public.service.lastModifiedBy</code>.
+     * Getter for <code>public.service.lastmodifiedby</code>.
      */
-    @Column(name = "lastModifiedBy")
+    @Column(name = "lastmodifiedby")
     @Override
     public String getLastmodifiedby() {
         return (String) get(3);
     }
 
     /**
-     * Setter for <code>public.service.priceForWindows</code>.
+     * Setter for <code>public.service.priceforwindows</code>.
      */
     @Override
     public ServiceRecord setPriceforwindows(BigDecimal value) {
@@ -127,16 +127,16 @@ public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements
     }
 
     /**
-     * Getter for <code>public.service.priceForWindows</code>.
+     * Getter for <code>public.service.priceforwindows</code>.
      */
-    @Column(name = "priceForWindows")
+    @Column(name = "priceforwindows")
     @Override
     public BigDecimal getPriceforwindows() {
         return (BigDecimal) get(4);
     }
 
     /**
-     * Setter for <code>public.service.lastModifiedDateTime</code>.
+     * Setter for <code>public.service.lastmodifieddatetime</code>.
      */
     @Override
     public ServiceRecord setLastmodifieddatetime(OffsetDateTime value) {
@@ -145,9 +145,9 @@ public class ServiceRecord extends UpdatableRecordImpl<ServiceRecord> implements
     }
 
     /**
-     * Getter for <code>public.service.lastModifiedDateTime</code>.
+     * Getter for <code>public.service.lastmodifieddatetime</code>.
      */
-    @Column(name = "lastModifiedDateTime")
+    @Column(name = "lastmodifieddatetime")
     @Override
     public OffsetDateTime getLastmodifieddatetime() {
         return (OffsetDateTime) get(5);

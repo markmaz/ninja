@@ -7,7 +7,6 @@ import com.ninjarmm.services.IMapperService;
 import com.ninjarmm.services.IUserService;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -22,7 +21,7 @@ public class UserService implements IUserService {
 
     @Override
     public UserModel getOne(UUID id) {
-        return null;
+        return mapperService.toModel(userDataService.selectOne(id));
     }
 
     @Override
@@ -33,12 +32,18 @@ public class UserService implements IUserService {
 
     @Override
     public void delete(UUID id) {
-
+        userDataService.delete(id);
     }
 
     @Override
     public UserModel update(UserModel resource, UserModel userModel) {
-        return null;
+        if(resource.getId() != null){
+            var results = userDataService.update(mapperService.toDao(resource), mapperService.toDao(userModel));
+            return mapperService.toModel(results);
+        }else{
+            var results = userDataService.insert(mapperService.toDao(resource), mapperService.toDao(userModel));
+            return mapperService.toModel(results);
+        }
     }
 
     @Override
@@ -49,6 +54,7 @@ public class UserService implements IUserService {
 
     @Override
     public UserModel findByUserName(String username) {
-        return mapperService.toModel(this.userDataService.findByUsername(username));
+        var results = userDataService.findByUsername(username);
+        return mapperService.toModel(results);
     }
 }
