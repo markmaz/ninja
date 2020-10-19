@@ -246,7 +246,7 @@
               <driver>org.postgresql.Driver</driver>
               <url>jdbc:postgresql://localhost:5432/ninja</url>
               <user>postgres</user>
-              <password>T@c0b311</password>
+              <password>[your password</password>
             </jdbc>
             <generator>
               <database>
