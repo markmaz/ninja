@@ -4,7 +4,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: T@c0b311
+    password: [your password]
     url: jdbc:postgresql://localhost:5432/ninja
 logging:
   level:
